@@ -10,5 +10,6 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          browser: chrome
           install-command: npm install
+          wait-on: 'https://www.saucedemo.com'
+          browser: chrome
