@@ -12,7 +12,7 @@ describe('Flujo completo de compra', () => {
     it('Compra de inicio a fin', function() {
         cy.get('.title').should('contain', 'Products');
         cy.get('.inventory_item_price').first().should('have.text', '$29.99');
-        cy.get('.btn.btn_primary.btn_small.btn_inventory').click();
+        cy.get('.btn.btn_primary.btn_small.btn_inventory').first().click();
         cy.get('.shopping_cart_badge').should('have.text', '1');    
         cy.get('.shopping_cart_link').click();
         cy.get('#checkout').click();
