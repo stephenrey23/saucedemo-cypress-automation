@@ -16,9 +16,9 @@ describe('Flujo completo de compra', () => {
         cy.get('.shopping_cart_badge').should('have.text', '1');    
         cy.get('.shopping_cart_link').click();
         cy.get('#checkout').click();
-        cy.get('#first-name').type(this.userData.nombre); 
-        cy.get('#last-name').type(this.userData.apellido);
-        cy.get('#postal-code').type(this.userData.codigoPostal);
+        cy.get('#first-name').type(this.userData.datosEnvio.nombre); 
+        cy.get('#last-name').type(this.userData.datosEnvio.apellido);
+        cy.get('#postal-code').type(this.userData.datosEnvio.codigoPostal);
         cy.get('#continue').click();
         cy.get('#finish').click();
         cy.get('.complete-header').should('contain', 'Thank you for your order!');
