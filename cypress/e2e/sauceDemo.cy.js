@@ -1,6 +1,6 @@
 describe('Flujo completo de compra', () => {
     beforeEach(function() {
-        cy.fixture('users').then((data) => {
+        cy.fixture('users.json').then((data) => {
             this.userData = data; 
             cy.visit('https://www.saucedemo.com/');
             cy.get('#user-name').type(this.userData.usuarioValido);
