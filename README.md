@@ -1,4 +1,4 @@
-
+[![Cypress Tests](https://github.com/stephenrey23/saucedemo-cypress-automation/actions/workflows/main.yml/badge.svg)](https://github.com/stephenrey23/saucedemo-cypress-automation/actions/workflows/main.yml)
 # Proyecto de Automatización SauceDemo - Cypress
 
 Este repositorio contiene un flujo de prueba **End-to-End (E2E)** completo para la plataforma [SauceDemo](https://www.saucedemo.com/), desarrollado con **Cypress**.
