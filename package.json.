@@ -1,0 +1,13 @@
+{
+  "name": "saucedemo-automation",
+  "version": "1.0.0",
+  "description": "Automatización de pruebas E2E con Cypress",
+  "main": "index.js",
+  "devDependencies": {
+    "cypress": "^13.6.0"
+  },
+  "scripts": {
+    "test": "npx cypress run"
+  }
+}
+
